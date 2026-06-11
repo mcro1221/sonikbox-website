@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonikBox | Premium Mobile Production Studio Rental LA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: '#00ff66', /* Electric Cyber Green Accent */
+                        darkbg: '#0a0a0c',
+                        cardbg: '#121216'
+                    }
+                }
+            }
+        }
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-darkbg text-gray-100 font-sans selection:bg-cyber selection:text-black">
+
+    <nav class="border-b border-gray-800 bg-darkbg/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-black tracking-wider text-white">SONIK<span class="text-cyber">BOX</span></span>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-medium tracking-wide">
+                <a href="#specs" class="hover:text-cyber transition-colors">Specs</a>
+                <a href="#estimator" class="hover:text-cyber transition-colors">Quote Builder</a>
+                <a href="#estimator" class="bg-cyber text-black px-4 py-2 rounded font-bold hover:bg-white transition-all text-xs uppercase">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden py-24 lg:py-32 border-b border-gray-900">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">Los Angeles, CA</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mt-6 mb-6">
+                Hollywood-Grade Mobile Production. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Wherever You Shoot.</span>
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                SonikBox is a fully decoupled, float-room mobile environment designed to achieve a dead-quiet noise floor (NC-15 rating) anywhere in the LA basin. No traffic delays, no studio lockouts. We bring the studio to your set.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#estimator" class="bg-cyber text-black text-center px-8 py-4 rounded font-bold hover:bg-white transition-all shadow-lg shadow-cyber/10">Build Your Booking Quote</a>
+                <a href="#specs" class="border border-gray-700 hover:border-gray-500 text-center px-8 py-4 rounded font-medium transition-all text-white">View Gear Manifesto</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="specs" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-white">Technical Equipment & Gear Specs</h2>
+                <p class="text-gray-400 mt-2">Zero compromise. Built with industry-standard hardware trusted by audio professionals worldwide.</p>
+            </div>
+            <button onclick="window.print()" class="text-xs font-bold uppercase tracking-wider text-gray-400 border border-gray-800 rounded px-4 py-2 hover:text-cyber hover:border-cyber transition-all shrink-0">
+                📥 Print / Download Specs Sheet
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="space-y-6">
+                <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🔊 Monitoring & Acoustics</h3>
+                    <div class="divide-y divide-gray-800/60 text-sm">
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Main Monitors</span><span class="text-gray-400 text-right">Focal Trio6 Be (Pair)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Close-field</span><span class="text-gray-400 text-right">Avantone Pro Active MixCubes</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Acoustic Treatment</span><span class="text-gray-400 text-right">Custom Vicoustic Integration</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Headphone Amp</span><span class="text-gray-400 text-right">Dangerous Music SOURCE</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🖥️ Control Center & Processing</h3>
+                    <div class="divide-y divide-gray-800/60 text-sm">
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Host Computer</span><span class="text-gray-400 text-right">Mac Studio (M2 Ultra, 128GB RAM)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Audio Interface</span><span class="text-gray-400 text-right">Universal Audio Apollo x16 HE</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Preamps</span><span class="text-gray-400 text-right">Neve 1073OPX & SSL PureDrive</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Master Clock</span><span class="text-gray-400 text-right">Antelope Audio Isochrone</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎙️ Microphone Locker</h3>
+                    <div class="divide-y divide-gray-800/60 text-sm">
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Condensers</span><span class="text-gray-400 text-right">Neumann U87 Ai (x2), AKG C414 XLII (x2)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Dynamics</span><span class="text-gray-400 text-right">Shure SM7B (x4), Electro-Voice RE20 (x2)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Ribbon</span><span class="text-gray-400 text-right">Royer R-121 (x2)</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">⚡ Power & Infrastructure</h3>
+                    <div class="divide-y divide-gray-800/60 text-sm">
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Primary Power</span><span class="text-gray-400 text-right">Dual Honda EU7000iS Inverter Gen (14kW)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Battery Backup</span><span class="text-gray-400 text-right">APC Smart-UPS Li-Ion 3000VA</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Data Connection</span><span class="text-gray-400 text-right">Starlink Mobility + Peplink Bonded 5G</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estimator" class="py-20 bg-gradient-to-b from-darkbg to-black border-t border-gray-950">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Interactive Quote Builder</h2>
+                <p class="text-gray-400 mt-2">Configure your project parameters to calculate a real-time production budget estimate.</p>
+            </div>
+
+            <div x-data="{
+                hours: 4,
+                zoneFee: 0,
+                engineer: false,
+                pa: false,
+                internet: false,
+                get baseCost() { return this.hours * 150; },
+                get engineerCost() { return this.engineer ? (this.hours * 75) : 0; },
+                get paCost() { return this.pa ? (this.hours * 40) : 0; },
+                get internetCost() { return this.internet ? 100 : 0; },
+                get total() { return this.baseCost + parseInt(this.zoneFee) + this.engineerCost + this.paCost + this.internetCost; }
+            }" class="bg-cardbg rounded-xl border border-gray-800 p-6 md:p-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+                
+                <div class="md:col-span-3 space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">
+                            Rental Duration: <span class="text-cyber font-bold" x-text="hours + ' Hours'"></span>
+                        </label>
+                        <input type="range" min="4" max="12" x-model="hours" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-cyber">
+                        <div class="flex justify-between text-xs text-gray-500 mt-1"><span>4h Min</span><span>12h Max</span></div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">LA Travel Distance Zone</label>
+                        <select x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
+                            <option value="0">Within 15 miles of Central LA (Free)</option>
+                            <option value="150">15 to 40 miles out (Studio Zone Fee - $150)</option>
+                            <option value="300">40+ miles out (Extended Zone Fee - $300)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">Optional Add-ons & Crew</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
+                                <input type="checkbox" x-model="engineer" class="rounded accent-cyber w-4 h-4">
+                                <span>Onboard Audio Engineer (+$75/hr)</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
+                                <input type="checkbox" x-model="pa" class="rounded accent-cyber w-4 h-4">
+                                <span>Production Assistant (+$40/hr)</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
+                                <input type="checkbox" x-model="internet" class="rounded accent-cyber w-4 h-4">
+                                <span>High-Speed Satellite Internet (+$100 flat)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 bg-darkbg/50 rounded-lg p-5 border border-gray-800/60 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Cost Breakdown</h4>
+                        <div class="space-y-2 text-xs text-gray-400">
+                            <div class="flex justify-between"><span>Base Rate ($150/hr):</span><span class="text-white" x-text="'$' + baseCost"></span></div>
+                            <div class="flex justify-between"><span>Travel/Zone Fee:</span><span class="text-white" x-text="'$' + zoneFee"></span></div>
+                            <div class="flex justify-between" x-show="engineer"><span>Audio Engineer:</span><span class="text-white" x-text="'$' + engineerCost"></span></div>
+                            <div class="flex justify-between" x-show="pa"><span>Production Assistant:</span><span class="text-white" x-text="'$' + paCost"></span></div>
+                            <div class="flex justify-between" x-show="internet"><span>Satellite Internet:</span><span class="text-white" x-text="'$' + internetCost"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-gray-800">
+                        <span class="text-xs uppercase tracking-wider text-gray-500 block">Estimated Total</span>
+                        <span class="text-3xl font-black text-cyber" x-text="'$' + total"></span>
+                        <button onclick="alert('Inquiry feature simulated! Connect this to your real booking email when ready.')" class="w-full mt-4 bg-cyber text-black font-bold uppercase tracking-wide text-xs py-3 rounded hover:bg-white transition-all text-center">
+                            Submit Quote Inquiry
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 text-xs py-12 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div>
+                <p class="font-bold text-gray-400 text-sm mb-1">SonikBox Logistics Operations</p>
+                <p>Fully certified for FilmLA production spaces. Vehicles require direct exterior access clearance and 10ft clearance width. Gear manifests verified June 2026.</p>
+            </div>
+            <div class="md:text-right text-gray-600">
+                &copy; 2026 SonikBox Mobile. All rights reserved. Made in Los Angeles, California.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
