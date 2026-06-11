@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SonikBox | Premium Mobile Production Studio Rental LA</title>
+    <title>SonikBox | Mobile Recording Studios • LA & San Diego</title>
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        cyber: '#00ff66', /* Electric Cyber Green Accent */
+                        cyber: '#00ff66', /* Electric Studio Green Accent */
                         darkbg: '#0a0a0c',
                         cardbg: '#121216'
                     }
@@ -18,169 +19,227 @@
             }
         }
     </script>
+    <!-- Alpine.js for multi-hub interactive logic -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-darkbg text-gray-100 font-sans selection:bg-cyber selection:text-black">
 
+    <!-- NAVIGATION -->
     <nav class="border-b border-gray-800 bg-darkbg/90 backdrop-blur sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <span class="text-2xl font-black tracking-wider text-white">SONIK<span class="text-cyber">BOX</span></span>
             </div>
             <div class="flex items-center gap-6 text-sm font-medium tracking-wide">
-                <a href="#specs" class="hover:text-cyber transition-colors">Specs</a>
-                <a href="#estimator" class="hover:text-cyber transition-colors">Quote Builder</a>
-                <a href="#estimator" class="bg-cyber text-black px-4 py-2 rounded font-bold hover:bg-white transition-all text-xs uppercase">Book Now</a>
+                <a href="#hubs" class="hover:text-cyber transition-colors">Our Hubs</a>
+                <a href="#specs" class="hover:text-cyber transition-colors">Studio Specs</a>
+                <a href="#estimator" class="hover:text-cyber transition-colors">Session Builder</a>
+                <a href="#estimator" class="bg-cyber text-black px-4 py-2 rounded font-bold hover:bg-white transition-all text-xs uppercase tracking-wider">Book Session</a>
             </div>
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <header class="relative overflow-hidden py-24 lg:py-32 border-b border-gray-900">
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">Los Angeles, CA</span>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mt-6 mb-6">
-                Hollywood-Grade Mobile Production. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Wherever You Shoot.</span>
+            <div class="flex justify-center gap-2 mb-6">
+                <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">Los Angeles Hub</span>
+                <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">San Diego Hub</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
+                A World-Class Recording Rig. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Parked Outside Your Door.</span>
             </h1>
             <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-                SonikBox is a fully decoupled, float-room mobile environment designed to achieve a dead-quiet noise floor (NC-15 rating) anywhere in the LA basin. No traffic delays, no studio lockouts. We bring the studio to your set.
+                SonikBox operates two identical, fully decoupled acoustic float-room studios mobile throughout Southern California. Skip the commercial studio politics and highway traffic. Record vocals, cut tracks, and mix down records right outside your home, villa, or venue.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#estimator" class="bg-cyber text-black text-center px-8 py-4 rounded font-bold hover:bg-white transition-all shadow-lg shadow-cyber/10">Build Your Booking Quote</a>
-                <a href="#specs" class="border border-gray-700 hover:border-gray-500 text-center px-8 py-4 rounded font-medium transition-all text-white">View Gear Manifesto</a>
+                <a href="#estimator" class="bg-cyber text-black text-center px-8 py-4 rounded font-bold hover:bg-white transition-all shadow-lg shadow-cyber/10">Configure Your Session</a>
+                <a href="#specs" class="border border-gray-700 hover:border-gray-500 text-center px-8 py-4 rounded font-medium transition-all text-white">Browse the Mic Locker</a>
             </div>
         </div>
     </header>
 
+    <!-- HUB LOCATIONS MATRIX -->
+    <section id="hubs" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-900">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl">
+                <div class="text-xs uppercase font-bold text-cyber tracking-widest mb-1">Hub 01</div>
+                <h3 class="text-xl font-bold text-white mb-2">Greater Los Angeles Basin</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Serving Hollywood, Burbank, Santa Monica, Silver Lake, the Valley, and surrounding creative sectors. Seamless integration with standard industry production locations.</p>
+            </div>
+            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl">
+                <div class="text-xs uppercase font-bold text-cyber tracking-widest mb-1">Hub 02</div>
+                <h3 class="text-xl font-bold text-white mb-2">San Diego County</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Serving downtown San Diego, North County coastal tracks, La Jolla, Chula Vista, and tracking sessions out toward El Cajon or local desert venues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH SPECS / MUSIC GEAR LOCKER -->
     <section id="specs" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-                <h2 class="text-3xl font-bold tracking-tight text-white">Technical Equipment & Gear Specs</h2>
-                <p class="text-gray-400 mt-2">Zero compromise. Built with industry-standard hardware trusted by audio professionals worldwide.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-white">The Sound Manifesto & Gear Specs</h2>
+                <p class="text-gray-400 mt-2">Both vehicles house perfectly identical configurations. No matter which hub responds, your signal chain remains flawless.</p>
             </div>
             <button onclick="window.print()" class="text-xs font-bold uppercase tracking-wider text-gray-400 border border-gray-800 rounded px-4 py-2 hover:text-cyber hover:border-cyber transition-all shrink-0">
-                📥 Print / Download Specs Sheet
+                📥 Print Studio Rider / PDF Specs
             </button>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Monitoring & Preamps -->
             <div class="space-y-6">
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🔊 Monitoring & Acoustics</h3>
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🔊 Monitoring & Acoustic Precision</h3>
                     <div class="divide-y divide-gray-800/60 text-sm">
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Main Monitors</span><span class="text-gray-400 text-right">Focal Trio6 Be (Pair)</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Close-field</span><span class="text-gray-400 text-right">Avantone Pro Active MixCubes</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Acoustic Treatment</span><span class="text-gray-400 text-right">Custom Vicoustic Integration</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Headphone Amp</span><span class="text-gray-400 text-right">Dangerous Music SOURCE</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Main Reference Monitors</span><span class="text-gray-400 text-right">Focal Trio6 Be (Tri-Amplified Active)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Nearfield Reference</span><span class="text-gray-400 text-right">Avantone Pro Active MixCubes</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Headphone Distribution</span><span class="text-gray-400 text-right">Dangerous Music SOURCE & Audio-Technica M50x (x4)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Room Tuning</span><span class="text-gray-400 text-right">Custom Vicoustic Diffusion & Bass Trapping</span></div>
                     </div>
                 </div>
 
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🖥️ Control Center & Processing</h3>
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎛️ Analog Signal Chain & Processing</h3>
                     <div class="divide-y divide-gray-800/60 text-sm">
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Host Computer</span><span class="text-gray-400 text-right">Mac Studio (M2 Ultra, 128GB RAM)</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Audio Interface</span><span class="text-gray-400 text-right">Universal Audio Apollo x16 HE</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Preamps</span><span class="text-gray-400 text-right">Neve 1073OPX & SSL PureDrive</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Master Clock</span><span class="text-gray-400 text-right">Antelope Audio Isochrone</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Microphone Preamps</span><span class="text-gray-400 text-right">Neve 1073OPX (8 Channels of Pure Analog Warmth)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Tube Dynamics</span><span class="text-gray-400 text-right">Tube-Tech CL 1B Opto Compressor Reissue</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Audio Converters</span><span class="text-gray-400 text-right">Universal Audio Apollo x16 Heritage Edition</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">DAW System</span><span class="text-gray-400 text-right">Mac Studio M2 Ultra (Pro Tools Ultimate, Logic, Ableton)</span></div>
                     </div>
                 </div>
             </div>
 
+            <!-- Mic Locker & Power -->
             <div class="space-y-6">
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎙️ Microphone Locker</h3>
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎙️ Elite Microphone Locker</h3>
                     <div class="divide-y divide-gray-800/60 text-sm">
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Condensers</span><span class="text-gray-400 text-right">Neumann U87 Ai (x2), AKG C414 XLII (x2)</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Dynamics</span><span class="text-gray-400 text-right">Shure SM7B (x4), Electro-Voice RE20 (x2)</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Ribbon</span><span class="text-gray-400 text-right">Royer R-121 (x2)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Vocal Flagship</span><span class="text-gray-400 text-right">Neumann U87 Ai Large-Diaphragm Condenser</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Multi-Pattern Condensers</span><span class="text-gray-400 text-right">AKG C414 XLII (Stereo Matched Pair)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Classic Ribbons</span><span class="text-gray-400 text-right">Royer R-121 (Incredible for high-SPL/Instruments)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Vocal / Broadcast Dynamics</span><span class="text-gray-400 text-right">Shure SM7B (x4), Electro-Voice RE20 (x2)</span></div>
                     </div>
                 </div>
 
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">⚡ Power & Infrastructure</h3>
+                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">⚡ Clean Studio Power & Infrastructure</h3>
                     <div class="divide-y divide-gray-800/60 text-sm">
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Primary Power</span><span class="text-gray-400 text-right">Dual Honda EU7000iS Inverter Gen (14kW)</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Battery Backup</span><span class="text-gray-400 text-right">APC Smart-UPS Li-Ion 3000VA</span></div>
-                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Data Connection</span><span class="text-gray-400 text-right">Starlink Mobility + Peplink Bonded 5G</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Power Delivery</span><span class="text-gray-400 text-right">Parallel Honda EU7000iS Inverters (Pure Sine Wave)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Battery Isolation</span><span class="text-gray-400 text-right">APC Smart-UPS Li-Ion 3000VA (Zero Audio Hum)</span></div>
+                        <div class="py-3 flex justify-between"><span class="font-medium text-white">Network Connections</span><span class="text-gray-400 text-right">Starlink Mobility for Real-Time cloud tracking/collabs</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- INTERACTIVE MUSIC SESSION CALCULATOR (MULTI-HUB EDITION) -->
     <section id="estimator" class="py-20 bg-gradient-to-b from-darkbg to-black border-t border-gray-950">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold tracking-tight text-white">Interactive Quote Builder</h2>
-                <p class="text-gray-400 mt-2">Configure your project parameters to calculate a real-time production budget estimate.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-white">Multi-Hub Session Rate Builder</h2>
+                <p class="text-gray-400 mt-2">Select your nearest regional hub and configure your session to lock down a real-time quote.</p>
             </div>
 
+            <!-- Dynamic Alpine.js Component for Multi-Hub Logistics -->
             <div x-data="{
+                hub: 'LA',
                 hours: 4,
                 zoneFee: 0,
                 engineer: false,
-                pa: false,
-                internet: false,
+                autotune: false,
+                mixdown: false,
                 get baseCost() { return this.hours * 150; },
-                get engineerCost() { return this.engineer ? (this.hours * 75) : 0; },
-                get paCost() { return this.pa ? (this.hours * 40) : 0; },
-                get internetCost() { return this.internet ? 100 : 0; },
-                get total() { return this.baseCost + parseInt(this.zoneFee) + this.engineerCost + this.paCost + this.internetCost; }
+                get engineerCost() { return this.engineer ? (this.hours * 80) : 0; },
+                get autotuneCost() { return this.autotune ? 100 : 0; },
+                get mixdownCost() { return this.mixdown ? 250 : 0; },
+                get total() { return this.baseCost + parseInt(this.zoneFee) + this.engineerCost + this.autotuneCost + this.mixdownCost; }
             }" class="bg-cardbg rounded-xl border border-gray-800 p-6 md:p-8 grid grid-cols-1 md:grid-cols-5 gap-8">
                 
+                <!-- Inputs Box -->
                 <div class="md:col-span-3 space-y-6">
+                    <!-- Hub Radio Buttons -->
                     <div>
-                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">
-                            Rental Duration: <span class="text-cyber font-bold" x-text="hours + ' Hours'"></span>
-                        </label>
-                        <input type="range" min="4" max="12" x-model="hours" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-cyber">
-                        <div class="flex justify-between text-xs text-gray-500 mt-1"><span>4h Min</span><span>12h Max</span></div>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">1. Select Dispatch Base</label>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button @click="hub = 'LA'; zoneFee = 0;" :class="hub === 'LA' ? 'border-cyber text-cyber bg-cyber/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
+                                Los Angeles Hub
+                            </button>
+                            <button @click="hub = 'SD'; zoneFee = 0;" :class="hub === 'SD' ? 'border-cyber text-cyber bg-cyber/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
+                                San Diego Hub
+                            </button>
+                        </div>
                     </div>
 
+                    <!-- Hours Slider -->
                     <div>
-                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">LA Travel Distance Zone</label>
-                        <select x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
-                            <option value="0">Within 15 miles of Central LA (Free)</option>
-                            <option value="150">15 to 40 miles out (Studio Zone Fee - $150)</option>
-                            <option value="300">40+ miles out (Extended Zone Fee - $300)</option>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">
+                            2. Tracking Blocks: <span class="text-cyber font-bold" x-text="hours + ' Hours'"></span>
+                        </label>
+                        <input type="range" min="4" max="12" x-model="hours" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-cyber">
+                        <div class="flex justify-between text-xs text-gray-500 mt-1"><span>4h Minimum Session</span><span>12h Full Day Block</span></div>
+                    </div>
+
+                    <!-- Dynamic Travel Drops Based on Hub Selected -->
+                    <div>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">3. Session Location Radius</label>
+                        
+                        <!-- LA Dropdown -->
+                        <select x-show="hub === 'LA'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
+                            <option value="0">Metro LA & Hollywood (Within 15 mi — Free)</option>
+                            <option value="150">Greater LA County / Valley (15 to 40 mi — $150 Travel Fee)</option>
+                            <option value="300">Out-of-Bounds Locations (Malibu, Desert, Ventura — $300 Travel Fee)</option>
+                        </select>
+
+                        <!-- SD Dropdown -->
+                        <select x-show="hub === 'SD'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
+                            <option value="0">Downtown, Gaslamp & Mission Valley (Within 15 mi — Free)</option>
+                            <option value="150">North County / Oceanside / East County (15 to 40 mi — $150 Travel Fee)</option>
+                            <option value="300">Extended Tracks (Temecula, Imperial Valley — $300 Travel Fee)</option>
                         </select>
                     </div>
 
+                    <!-- Add-ons -->
                     <div>
-                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">Optional Add-ons & Crew</label>
+                        <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">4. Engineering & Post Add-Ons</label>
                         <div class="space-y-3">
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
                                 <input type="checkbox" x-model="engineer" class="rounded accent-cyber w-4 h-4">
-                                <span>Onboard Audio Engineer (+$75/hr)</span>
+                                <span>Grammy-vetted Tracking Engineer (+$80/hr)</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
-                                <input type="checkbox" x-model="pa" class="rounded accent-cyber w-4 h-4">
-                                <span>Production Assistant (+$40/hr)</span>
+                                <input type="checkbox" x-model="autotune" class="rounded accent-cyber w-4 h-4">
+                                <span>Antares Auto-Tune Hybrid Real-time Rig (+$100 flat)</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
-                                <input type="checkbox" x-model="internet" class="rounded accent-cyber w-4 h-4">
-                                <span>High-Speed Satellite Internet (+$100 flat)</span>
+                                <input type="checkbox" x-model="mixdown" class="rounded accent-cyber w-4 h-4">
+                                <span>Full Stereophonic Mixdown & Reference Master (+$250 / track)</span>
                             </label>
                         </div>
                     </div>
                 </div>
 
+                <!-- Display Box -->
                 <div class="md:col-span-2 bg-darkbg/50 rounded-lg p-5 border border-gray-800/60 flex flex-col justify-between">
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Cost Breakdown</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Session Breakdown</h4>
                         <div class="space-y-2 text-xs text-gray-400">
-                            <div class="flex justify-between"><span>Base Rate ($150/hr):</span><span class="text-white" x-text="'$' + baseCost"></span></div>
-                            <div class="flex justify-between"><span>Travel/Zone Fee:</span><span class="text-white" x-text="'$' + zoneFee"></span></div>
-                            <div class="flex justify-between" x-show="engineer"><span>Audio Engineer:</span><span class="text-white" x-text="'$' + engineerCost"></span></div>
-                            <div class="flex justify-between" x-show="pa"><span>Production Assistant:</span><span class="text-white" x-text="'$' + paCost"></span></div>
-                            <div class="flex justify-between" x-show="internet"><span>Satellite Internet:</span><span class="text-white" x-text="'$' + internetCost"></span></div>
+                            <div class="flex justify-between"><span>Selected Base:</span><span class="text-cyber font-bold" x-text="hub === 'LA' ? 'Los Angeles' : 'San Diego'"></span></div>
+                            <div class="flex justify-between"><span>Dry Studio Rental ($150/hr):</span><span class="text-white" x-text="'$' + baseCost"></span></div>
+                            <div class="flex justify-between"><span>Location Transit Fee:</span><span class="text-white" x-text="'$' + zoneFee"></span></div>
+                            <div class="flex justify-between" x-show="engineer"><span>Tracking Engineer:</span><span class="text-white" x-text="'$' + engineerCost"></span></div>
+                            <div class="flex justify-between" x-show="autotune"><span>Auto-Tune Processing:</span><span class="text-white" x-text="'$' + autotuneCost"></span></div>
+                            <div class="flex justify-between" x-show="mixdown"><span>Mix & Master Suite:</span><span class="text-white" x-text="'$' + mixdownCost"></span></div>
                         </div>
                     </div>
 
                     <div class="mt-6 pt-4 border-t border-gray-800">
-                        <span class="text-xs uppercase tracking-wider text-gray-500 block">Estimated Total</span>
+                        <span class="text-xs uppercase tracking-wider text-gray-500 block">Total Session Estimate</span>
                         <span class="text-3xl font-black text-cyber" x-text="'$' + total"></span>
-                        <button onclick="alert('Inquiry feature simulated! Connect this to your real booking email when ready.')" class="w-full mt-4 bg-cyber text-black font-bold uppercase tracking-wide text-xs py-3 rounded hover:bg-white transition-all text-center">
-                            Submit Quote Inquiry
+                        <button onclick="alert('Session inquiry logged for the specified Hub! Connect this code to a backend form handler when you go live.')" class="w-full mt-4 bg-cyber text-black font-bold uppercase tracking-wide text-xs py-3 rounded hover:bg-white transition-all text-center">
+                            Request Studio Lockout
                         </button>
                     </div>
                 </div>
@@ -189,14 +248,15 @@
         </div>
     </section>
 
+    <!-- FOOTER LOGISTICS -->
     <footer class="bg-black text-gray-500 text-xs py-12 border-t border-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div>
-                <p class="font-bold text-gray-400 text-sm mb-1">SonikBox Logistics Operations</p>
-                <p>Fully certified for FilmLA production spaces. Vehicles require direct exterior access clearance and 10ft clearance width. Gear manifests verified June 2026.</p>
+                <p class="font-bold text-gray-400 text-sm mb-1">SonikBox Studio Operations Matrix</p>
+                <p>Vehicles require flat clearing surfaces and 10-foot wide standard clearance parameters. Independent local crews dispatched per regional hub territory. Gear manifest verified June 2026.</p>
             </div>
             <div class="md:text-right text-gray-600">
-                &copy; 2026 SonikBox Mobile. All rights reserved. Made in Los Angeles, California.
+                &copy; 2026 SonikBox Mobile Group. All rights reserved. Made in Southern California.
             </div>
         </div>
     </footer>
