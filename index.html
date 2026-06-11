@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SonikBox | Mobile Recording Studios • LA & San Diego</title>
+    <title>SonikBox | Premium Mobile Recording & Music Production Studio LA & SD</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -11,9 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        cyber: '#00ff66', /* Electric Studio Green Accent */
-                        darkbg: '#0a0a0c',
-                        cardbg: '#121216'
+                        brandorange: '#ff5500', /* Vibrant Studio Orange */
+                        darkbg: '#08080a',
+                        cardbg: '#111115'
                     }
                 }
             }
@@ -21,40 +21,73 @@
     </script>
     <!-- Alpine.js for multi-hub interactive logic -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="bg-darkbg text-gray-100 font-sans selection:bg-cyber selection:text-black">
+<body class="bg-darkbg text-gray-100 font-sans selection:bg-brandorange selection:text-black">
 
     <!-- NAVIGATION -->
-    <nav class="border-b border-gray-800 bg-darkbg/90 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <nav class="border-b border-gray-900 bg-darkbg/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <span class="text-2xl font-black tracking-wider text-white">SONIK<span class="text-cyber">BOX</span></span>
+                <span class="text-2xl font-black tracking-wider text-white">SONIK<span class="text-brandorange">BOX</span></span>
             </div>
-            <div class="flex items-center gap-6 text-sm font-medium tracking-wide">
-                <a href="#hubs" class="hover:text-cyber transition-colors">Our Hubs</a>
-                <a href="#specs" class="hover:text-cyber transition-colors">Studio Specs</a>
-                <a href="#estimator" class="hover:text-cyber transition-colors">Session Builder</a>
-                <a href="#estimator" class="bg-cyber text-black px-4 py-2 rounded font-bold hover:bg-white transition-all text-xs uppercase tracking-wider">Book Session</a>
+            <div class="flex items-center gap-6 text-sm font-semibold tracking-wide">
+                <a href="#hubs" class="text-gray-400 hover:text-brandorange transition-colors">Our Hubs</a>
+                <a href="#specs" class="text-gray-400 hover:text-brandorange transition-colors">Studio Specs</a>
+                <a href="#estimator" class="text-gray-400 hover:text-brandorange transition-colors">Session Builder</a>
+                <a href="#estimator" class="bg-brandorange text-white px-5 py-2.5 rounded font-bold hover:bg-white hover:text-black transition-all text-xs uppercase tracking-wider shadow-lg shadow-brandorange/20">Book Session</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="relative overflow-hidden py-24 lg:py-32 border-b border-gray-900">
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <div class="flex justify-center gap-2 mb-6">
-                <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">Los Angeles Hub</span>
-                <span class="text-cyber text-xs font-bold tracking-widest uppercase bg-cyber/10 px-3 py-1 rounded-full border border-cyber/20">San Diego Hub</span>
-            </div>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
-                A World-Class Recording Rig. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Parked Outside Your Door.</span>
-            </h1>
-            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-                SonikBox operates two identical, fully decoupled acoustic float-room studios mobile throughout Southern California. Skip the commercial studio politics and highway traffic. Record vocals, cut tracks, and mix down records right outside your home, villa, or venue.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#estimator" class="bg-cyber text-black text-center px-8 py-4 rounded font-bold hover:bg-white transition-all shadow-lg shadow-cyber/10">Configure Your Session</a>
-                <a href="#specs" class="border border-gray-700 hover:border-gray-500 text-center px-8 py-4 rounded font-medium transition-all text-white">Browse the Mic Locker</a>
+    <header class="relative overflow-hidden py-20 lg:py-32 border-b border-gray-900">
+        <!-- Ambient background gradient glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brandorange/5 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 text-left">
+                    <div class="inline-flex gap-2 mb-6">
+                        <span class="text-brandorange text-xs font-bold tracking-widest uppercase bg-brandorange/10 px-3 py-1 rounded-full border border-brandorange/20">Los Angeles Hub</span>
+                        <span class="text-brandorange text-xs font-bold tracking-widest uppercase bg-brandorange/10 px-3 py-1 rounded-full border border-brandorange/20">San Diego Hub</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        A World-Class Recording Rig. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-brandorange">Parked Outside Your Door.</span>
+                    </h1>
+                    <p class="text-gray-400 text-lg mb-10 leading-relaxed max-w-xl">
+                        SonikBox operates two identical, fully decoupled acoustic float-room studios mobile throughout Southern California. Skip the commercial studio politics and highway traffic. Record vocals, cut tracks, and mix down records right outside your home, villa, or venue.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#estimator" class="bg-brandorange text-white text-center px-8 py-4 rounded font-bold hover:bg-white hover:text-black transition-all shadow-lg shadow-brandorange/20">Configure Your Session</a>
+                        <a href="#specs" class="border border-gray-800 hover:border-gray-600 text-center px-8 py-4 rounded font-medium transition-all text-white">Browse the Mic Locker</a>
+                    </div>
+                </div>
+
+                <!-- Right Visual (High-End Studio with Warm Orange Aesthetic) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-brandorange/30 to-transparent blur-md opacity-75"></div>
+                    <div class="relative bg-cardbg rounded-2xl border border-gray-800 overflow-hidden shadow-2xl">
+                        <img 
+                            src="http://googleusercontent.com/image_collection/image_retrieval/13180296013184346685_0" 
+                            alt="Warm orange music recording studio interior" 
+                            class="w-full h-80 object-cover object-center grayscale-[20%] contrast-[110%] hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brandorange uppercase tracking-wider">Acoustic Engineering</span>
+                            <h4 class="text-lg font-bold text-white mt-1">NC-15 Certified Mobile Float Room</h4>
+                            <p class="text-sm text-gray-400 mt-2">Fully decoupled walls and professional broadband trapping guarantee a dead-quiet environment anywhere on location.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -62,13 +95,15 @@
     <!-- HUB LOCATIONS MATRIX -->
     <section id="hubs" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-900">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl">
-                <div class="text-xs uppercase font-bold text-cyber tracking-widest mb-1">Hub 01</div>
+            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl relative group hover:border-brandorange/40 transition-colors">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-brandorange/5 rounded-bl-full pointer-events-none group-hover:bg-brandorange/10 transition-colors"></div>
+                <div class="text-xs uppercase font-bold text-brandorange tracking-widest mb-1">Hub 01</div>
                 <h3 class="text-xl font-bold text-white mb-2">Greater Los Angeles Basin</h3>
                 <p class="text-sm text-gray-400 leading-relaxed">Serving Hollywood, Burbank, Santa Monica, Silver Lake, the Valley, and surrounding creative sectors. Seamless integration with standard industry production locations.</p>
             </div>
-            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl">
-                <div class="text-xs uppercase font-bold text-cyber tracking-widest mb-1">Hub 02</div>
+            <div class="bg-cardbg/40 border border-gray-800 p-6 rounded-xl relative group hover:border-brandorange/40 transition-colors">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-brandorange/5 rounded-bl-full pointer-events-none group-hover:bg-brandorange/10 transition-colors"></div>
+                <div class="text-xs uppercase font-bold text-brandorange tracking-widest mb-1">Hub 02</div>
                 <h3 class="text-xl font-bold text-white mb-2">San Diego County</h3>
                 <p class="text-sm text-gray-400 leading-relaxed">Serving downtown San Diego, North County coastal tracks, La Jolla, Chula Vista, and tracking sessions out toward El Cajon or local desert venues.</p>
             </div>
@@ -82,7 +117,7 @@
                 <h2 class="text-3xl font-bold tracking-tight text-white">The Sound Manifesto & Gear Specs</h2>
                 <p class="text-gray-400 mt-2">Both vehicles house perfectly identical configurations. No matter which hub responds, your signal chain remains flawless.</p>
             </div>
-            <button onclick="window.print()" class="text-xs font-bold uppercase tracking-wider text-gray-400 border border-gray-800 rounded px-4 py-2 hover:text-cyber hover:border-cyber transition-all shrink-0">
+            <button onclick="window.print()" class="text-xs font-bold uppercase tracking-wider text-gray-400 border border-gray-800 rounded px-4 py-2 hover:text-brandorange hover:border-brandorange transition-all shrink-0">
                 📥 Print Studio Rider / PDF Specs
             </button>
         </div>
@@ -91,8 +126,8 @@
             <!-- Monitoring & Preamps -->
             <div class="space-y-6">
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🔊 Monitoring & Acoustic Precision</h3>
-                    <div class="divide-y divide-gray-800/60 text-sm">
+                    <h3 class="text-brandorange font-bold text-lg mb-4 flex items-center gap-2">🔊 Monitoring & Acoustic Precision</h3>
+                    <div class="divide-y divide-gray-800/40 text-sm">
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Main Reference Monitors</span><span class="text-gray-400 text-right">Focal Trio6 Be (Tri-Amplified Active)</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Nearfield Reference</span><span class="text-gray-400 text-right">Avantone Pro Active MixCubes</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Headphone Distribution</span><span class="text-gray-400 text-right">Dangerous Music SOURCE & Audio-Technica M50x (x4)</span></div>
@@ -101,8 +136,8 @@
                 </div>
 
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎛️ Analog Signal Chain & Processing</h3>
-                    <div class="divide-y divide-gray-800/60 text-sm">
+                    <h3 class="text-brandorange font-bold text-lg mb-4 flex items-center gap-2">🎛️ Analog Signal Chain & Processing</h3>
+                    <div class="divide-y divide-gray-800/40 text-sm">
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Microphone Preamps</span><span class="text-gray-400 text-right">Neve 1073OPX (8 Channels of Pure Analog Warmth)</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Tube Dynamics</span><span class="text-gray-400 text-right">Tube-Tech CL 1B Opto Compressor Reissue</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Audio Converters</span><span class="text-gray-400 text-right">Universal Audio Apollo x16 Heritage Edition</span></div>
@@ -114,8 +149,8 @@
             <!-- Mic Locker & Power -->
             <div class="space-y-6">
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">🎙️ Elite Microphone Locker</h3>
-                    <div class="divide-y divide-gray-800/60 text-sm">
+                    <h3 class="text-brandorange font-bold text-lg mb-4 flex items-center gap-2">🎙️ Elite Microphone Locker</h3>
+                    <div class="divide-y divide-gray-800/40 text-sm">
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Vocal Flagship</span><span class="text-gray-400 text-right">Neumann U87 Ai Large-Diaphragm Condenser</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Multi-Pattern Condensers</span><span class="text-gray-400 text-right">AKG C414 XLII (Stereo Matched Pair)</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Classic Ribbons</span><span class="text-gray-400 text-right">Royer R-121 (Incredible for high-SPL/Instruments)</span></div>
@@ -124,8 +159,8 @@
                 </div>
 
                 <div class="bg-cardbg p-6 rounded-lg border border-gray-800">
-                    <h3 class="text-cyber font-bold text-lg mb-4 flex items-center gap-2">⚡ Clean Studio Power & Infrastructure</h3>
-                    <div class="divide-y divide-gray-800/60 text-sm">
+                    <h3 class="text-brandorange font-bold text-lg mb-4 flex items-center gap-2">⚡ Clean Studio Power & Infrastructure</h3>
+                    <div class="divide-y divide-gray-800/40 text-sm">
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Power Delivery</span><span class="text-gray-400 text-right">Parallel Honda EU7000iS Inverters (Pure Sine Wave)</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Battery Isolation</span><span class="text-gray-400 text-right">APC Smart-UPS Li-Ion 3000VA (Zero Audio Hum)</span></div>
                         <div class="py-3 flex justify-between"><span class="font-medium text-white">Network Connections</span><span class="text-gray-400 text-right">Starlink Mobility for Real-Time cloud tracking/collabs</span></div>
@@ -164,10 +199,10 @@
                     <div>
                         <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">1. Select Dispatch Base</label>
                         <div class="grid grid-cols-2 gap-4">
-                            <button @click="hub = 'LA'; zoneFee = 0;" :class="hub === 'LA' ? 'border-cyber text-cyber bg-cyber/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
+                            <button @click="hub = 'LA'; zoneFee = 0;" :class="hub === 'LA' ? 'border-brandorange text-brandorange bg-brandorange/5 shadow-md shadow-brandorange/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
                                 Los Angeles Hub
                             </button>
-                            <button @click="hub = 'SD'; zoneFee = 0;" :class="hub === 'SD' ? 'border-cyber text-cyber bg-cyber/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
+                            <button @click="hub = 'SD'; zoneFee = 0;" :class="hub === 'SD' ? 'border-brandorange text-brandorange bg-brandorange/5 shadow-md shadow-brandorange/5' : 'border-gray-800 text-gray-400 hover:border-gray-700'" class="border rounded-lg p-3 text-sm font-bold tracking-wide transition-all text-center">
                                 San Diego Hub
                             </button>
                         </div>
@@ -176,9 +211,9 @@
                     <!-- Hours Slider -->
                     <div>
                         <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">
-                            2. Tracking Blocks: <span class="text-cyber font-bold" x-text="hours + ' Hours'"></span>
+                            2. Tracking Blocks: <span class="text-brandorange font-bold" x-text="hours + ' Hours'"></span>
                         </label>
-                        <input type="range" min="4" max="12" x-model="hours" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-cyber">
+                        <input type="range" min="4" max="12" x-model="hours" class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-brandorange">
                         <div class="flex justify-between text-xs text-gray-500 mt-1"><span>4h Minimum Session</span><span>12h Full Day Block</span></div>
                     </div>
 
@@ -187,14 +222,14 @@
                         <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">3. Session Location Radius</label>
                         
                         <!-- LA Dropdown -->
-                        <select x-show="hub === 'LA'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
+                        <select x-show="hub === 'LA'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-brandorange">
                             <option value="0">Metro LA & Hollywood (Within 15 mi — Free)</option>
                             <option value="150">Greater LA County / Valley (15 to 40 mi — $150 Travel Fee)</option>
                             <option value="300">Out-of-Bounds Locations (Malibu, Desert, Ventura — $300 Travel Fee)</option>
                         </select>
 
                         <!-- SD Dropdown -->
-                        <select x-show="hub === 'SD'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-cyber">
+                        <select x-show="hub === 'SD'" x-model="zoneFee" class="w-full bg-darkbg border border-gray-800 rounded px-3 py-2.5 text-sm text-gray-300 focus:outline-none focus:border-brandorange">
                             <option value="0">Downtown, Gaslamp & Mission Valley (Within 15 mi — Free)</option>
                             <option value="150">North County / Oceanside / East County (15 to 40 mi — $150 Travel Fee)</option>
                             <option value="300">Extended Tracks (Temecula, Imperial Valley — $300 Travel Fee)</option>
@@ -206,15 +241,15 @@
                         <label class="block text-sm font-semibold tracking-wide text-gray-300 mb-2">4. Engineering & Post Add-Ons</label>
                         <div class="space-y-3">
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
-                                <input type="checkbox" x-model="engineer" class="rounded accent-cyber w-4 h-4">
+                                <input type="checkbox" x-model="engineer" class="rounded accent-brandorange w-4 h-4">
                                 <span>Grammy-vetted Tracking Engineer (+$80/hr)</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
-                                <input type="checkbox" x-model="autotune" class="rounded accent-cyber w-4 h-4">
+                                <input type="checkbox" x-model="autotune" class="rounded accent-brandorange w-4 h-4">
                                 <span>Antares Auto-Tune Hybrid Real-time Rig (+$100 flat)</span>
                             </label>
                             <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
-                                <input type="checkbox" x-model="mixdown" class="rounded accent-cyber w-4 h-4">
+                                <input type="checkbox" x-model="mixdown" class="rounded accent-brandorange w-4 h-4">
                                 <span>Full Stereophonic Mixdown & Reference Master (+$250 / track)</span>
                             </label>
                         </div>
@@ -226,7 +261,7 @@
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">Session Breakdown</h4>
                         <div class="space-y-2 text-xs text-gray-400">
-                            <div class="flex justify-between"><span>Selected Base:</span><span class="text-cyber font-bold" x-text="hub === 'LA' ? 'Los Angeles' : 'San Diego'"></span></div>
+                            <div class="flex justify-between"><span>Selected Base:</span><span class="text-brandorange font-bold" x-text="hub === 'LA' ? 'Los Angeles' : 'San Diego'"></span></div>
                             <div class="flex justify-between"><span>Dry Studio Rental ($150/hr):</span><span class="text-white" x-text="'$' + baseCost"></span></div>
                             <div class="flex justify-between"><span>Location Transit Fee:</span><span class="text-white" x-text="'$' + zoneFee"></span></div>
                             <div class="flex justify-between" x-show="engineer"><span>Tracking Engineer:</span><span class="text-white" x-text="'$' + engineerCost"></span></div>
@@ -237,8 +272,8 @@
 
                     <div class="mt-6 pt-4 border-t border-gray-800">
                         <span class="text-xs uppercase tracking-wider text-gray-500 block">Total Session Estimate</span>
-                        <span class="text-3xl font-black text-cyber" x-text="'$' + total"></span>
-                        <button onclick="alert('Session inquiry logged for the specified Hub! Connect this code to a backend form handler when you go live.')" class="w-full mt-4 bg-cyber text-black font-bold uppercase tracking-wide text-xs py-3 rounded hover:bg-white transition-all text-center">
+                        <span class="text-3xl font-black text-brandorange" x-text="'$' + total"></span>
+                        <button onclick="alert('Session inquiry logged for the specified Hub! Connect this code to a backend form handler when you go live.')" class="w-full mt-4 bg-brandorange text-white font-bold uppercase tracking-wide text-xs py-3.5 rounded hover:bg-white hover:text-black transition-all text-center shadow-lg shadow-brandorange/20">
                             Request Studio Lockout
                         </button>
                     </div>
